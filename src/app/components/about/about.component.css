@@ -1,0 +1,42 @@
+#title{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+#title h1{
+    font-family: "finger",Arial;
+    font-size: 70px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#title p{
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+.about{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 23px;
+    padding-bottom: 5%;
+}
+.about h2{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.about p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}

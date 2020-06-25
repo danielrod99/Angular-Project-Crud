@@ -1,0 +1,39 @@
+
+<div class="container">
+    <h2>{{title}}</h2>
+   <span class="success" *ngIf="status">The project was created successfully!</span>
+   <span class="failed" *ngIf="failed">There was an error creating the project</span>
+    
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+        <p>
+            <label for="name">Name*</label>
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+            <span *ngIf="name.touched&&!name.valid">Fill the name</span>
+        </p>
+        <p>
+            <label for="description">Description*</label>
+            <textarea name="description" #description="ngModel" [(ngModel)]="project.description" cols="30" rows="10" required></textarea>
+            <span *ngIf="description.touched&&!description.valid">Fill the description</span>
+        </p>
+        <p>
+            <label for="category">Category*</label>
+            <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required>
+            <span *ngIf="category.touched&&!category.valid">Fill the category</span>
+        </p>
+        <p>
+            <label for="year">Year*</label>
+            <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year" required>
+            <span *ngIf="year.touched&&!year.valid">Fill the year</span>
+        </p>
+        <p>
+            <label for="langs">Languages*</label>
+            <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required>
+            <span *ngIf="langs.touched&&!langs.valid">Fill the languages</span>
+        </p>
+        <p>
+            <label for="image">Image</label>
+            <input type="file" name="image" #image="ngModel" [(ngModel)]="project.image" placeholder="Load Image">
+        </p>
+        <input type="submit" value="Send" [disabled]="!projectForm.form.valid">
+    </form>
+</div>
