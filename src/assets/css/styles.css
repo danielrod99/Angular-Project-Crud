@@ -98,7 +98,7 @@ form input[type="text"], form input[type="number"], form input[type="email"], fo
     padding: 5px;
 }
 
-form input[type="submit"],form button{
+form input[type="submit"],form button,.edit,.delete{
     font-size: 17px;
     padding: 5px;
     display: block;
@@ -130,4 +130,25 @@ form input[disabled]:hover{
     font-family: "finger",Arial;
     font-size: 40   px;
     margin: 0 auto;
+}
+.edit,.delete{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.edit{
+    background-color: orange;
+    border: 1px solid orangered;
+}
+.delete{
+    background-color: red;
+    border: 1px solid black;
+}
+.edit:hover{
+    background-color: rgb(153, 17, 17);
+}
+.delete:hover{
+    background-color: rgb(153, 17, 17);
 }

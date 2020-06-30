@@ -11,6 +11,7 @@ import { Global } from '../../services/global';
   providers: [ProjectService, UploadService]
 })
 export class CreateComponent implements OnInit {
+  public url=null;
   public title: string;
   public project: Project;
   public status: boolean;

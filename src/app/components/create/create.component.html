@@ -32,6 +32,8 @@
         </p>
         <p>
             <label for="image">Image</label>
+            <img *ngIf="project.image && url" src="{{url +'/get-image/'+project.image}}" alt="project image" width="100">
+            <br>
             <input type="file" name="image" #image="ngModel" [(ngModel)]="project.image" placeholder="Load Image" (change)="fileChangeEvent($event)">
         </p>
         <input type="submit" value="Send" [disabled]="!projectForm.form.valid">

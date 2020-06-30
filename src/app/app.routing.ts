@@ -9,6 +9,7 @@ import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {DetailComponent} from './components/detail/detail.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import {EditComponent} from './components/edit/edit.component';
 
 const appRoutes:Routes=[
     {path:'',component:AboutComponent},
@@ -17,6 +18,7 @@ const appRoutes:Routes=[
     {path:'create-project',component:CreateComponent},
     {path:'contact',component:ContactComponent},
     {path:'project/:id',component:DetailComponent},
+    {path:'edit-project/:id',component:EditComponent},
     {path:'**',component:NotfoundComponent}
 ];
 export const appRoutingProviders:any[]=[];

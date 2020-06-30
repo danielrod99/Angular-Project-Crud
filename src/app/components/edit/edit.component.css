@@ -1,0 +1,18 @@
+.container{
+    padding: 50px;
+    padding-top: 10px;
+}
+.container h2{
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.success{
+    background-color: rgba(75, 158, 6, 0.7);
+    color: white;
+}
+.failed{
+    background-color: red;
+    color: white;
+}
