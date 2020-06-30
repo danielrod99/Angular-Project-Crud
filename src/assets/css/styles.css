@@ -126,3 +126,8 @@ form input[disabled]:hover{
     background-color: #cccccc;
     border: 1px solid #cccccc;
 }
+.notFound{
+    font-family: "finger",Arial;
+    font-size: 40   px;
+    margin: 0 auto;
+}

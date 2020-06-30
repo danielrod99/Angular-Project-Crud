@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<div class="container">
+    <h2>Projects</h2>
+    <br>
+    <ul>
+        <li *ngFor="let project of projects" class="project">
+            <a [routerLink]="['/project',project._id]">
+           <h2>{{project.name}}</h2>
+            <p>{{project.year}}</p>
+            <img *ngIf="project.image" src="{{url+'/get-image/'+project.image}}" alt="project image">
+            </a>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+</div>

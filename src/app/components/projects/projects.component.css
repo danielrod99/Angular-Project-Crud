@@ -1,0 +1,24 @@
+.container{
+    padding: 50px;
+    padding-top: 10px;
+}
+.container img{
+    width: 100%;
+}
+.project{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    min-width: 25%;
+    width: 25%;
+    min-height: 25%;
+    height: 25%;
+}
+.project a{
+    text-decoration: none;
+    color: black;
+}
