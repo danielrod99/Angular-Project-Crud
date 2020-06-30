@@ -6,9 +6,15 @@
         <h3>{{project.description}}</h3>
         <p>{{project.category}}</p>
         <p>{{project.langs}}</p>
-        <p>
+        <p *ngIf="confirm==false">
             <a [routerLink]="['/edit-project',project._id]" class="edit">Edit</a>
+            <a (click)="confirm=true" class="delete">Delete</a>
+        </p>
+        <p *ngIf="confirm==true">
+            <span>Are you sure you want to delete this project?</span>
+            <br>
             <a (click)="deleteProject(project._id)" class="delete">Delete</a>
+            <a (click)="confirm=false" class="edit">Cancel</a>
         </p>
     </div>
     <div class="clearfix"></div>

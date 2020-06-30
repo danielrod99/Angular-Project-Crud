@@ -51,13 +51,15 @@ export class EditComponent implements OnInit {
               this.status = true;
               setTimeout(() => {
                 this.status = false;
-              }, 10000)
+                this._router.navigate(['/projects']);
+              }, 3000)
             });
           }else{
             this.status = true;
                 setTimeout(() => {
                   this.status = false;
-                }, 10000)
+                  this._router.navigate(['/projects']);
+                }, 3000)
           }
 
         } else {

@@ -14,6 +14,7 @@ import {Router,ActivatedRoute, Params} from '@angular/router'
 export class DetailComponent implements OnInit {
   public url:string;
   public project:Project;
+  public confirm:boolean;
   constructor(
     private _projectService:ProjectService,
     private _router:Router,
@@ -24,6 +25,7 @@ export class DetailComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.confirm=false;
     this._route.params.subscribe(params=>{
       let id = params.id;
       this.getProject(id);
